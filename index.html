@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Art</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- замінюємо курсор но кружок -->
+   <div class="mouse" aria-hidden="true">
+      <!-- замінюємо курсор но кружок який на картинках буде чорний -->
+      <div class="mouse__view">View</div>
+   </div>
+   <div class="preloader">
+      <span class="preloader__back">Contemporary</span>
+      <p class="preloader__forward">
+        The Art of Árita
+        <span class="preloader__background"></span>
+      </p>
+    </div>
+  
+
+   <input type="hidden" value="1" id="helper-input">
+
+   <div class="site-container">
+      <header class="header">
+         <div class="container header__container">
+            <a href="#" class="logo header__logo">
+               <span class="logo__letter">
+                  <img src="./img/á.svg" alt="logo">
+               </span>
+               Arita /16
+            </a>
+            <nav class="nav header__nav">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="" class="nav__link">Designers</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="" class="nav__link">History</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="" class="nav__link">New</a>
+                  </li>
+               </ul>
+            </nav>
+            <button class="burger header__burger" aria-label="Open Menu"></button>
+         </div>
+      </header>
+      <main class="main-wrapper">
+         <h1 class="visually-hidden">Designers studio Arita</h1>
+         <section class="main-section slide-1">
+            <div class="container">
+               <div class="slider-container">
+                  <div class="wrapper">
+                     <div class="slides-container__left">
+                        <div class="main-section__explore">Explore Designers</div>
+                        <div class="slides-container__slide slides-container__slide--active">
+                           <div class="slides-container__text">
+                              <h2 class="slides-container__title">Kirstie Noort</h2>
+                              <div class="desiner-info">
+                                 <div class="desiners-info__image">
+                                    <img src="./img/Photo.jpg" alt="Kirstie van Noort">
+                                 </div>
+                                 <div class="desiners-info__descr">
+                                    <div class="desiners-info__country">Netherlands</div>
+                                    <div class="desiners-info__by">photo BY <br> Kenta Hasegawa</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="slides-container__slide slides-container__slide">
+                           <div class="slides-container__text">
+                              <h2 class="slides-container__title slides-container__title--dark">Tomas Alonso</h2>
+                              <div class="desiner-info">
+                                 <div class="desiners-info__image">
+                                    <img src="./img/Photo2.jpg" alt="Tomas Alonso">
+                                 </div>
+                                 <div class="desiners-info__descr">
+                                    <div class="desiners-info__country">Spain</div>
+                                    <div class="desiners-info__by">photo BY <br> Kenta Hasegawa</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="slides-container__slide slides-container__slide">
+                           <div class="slides-container__text">
+                              <h2 class="slides-container__title">Stefan Diez</h2>
+                              <div class="desiner-info">
+                                 <div class="desiners-info__image">
+                                    <img src="./img/Bitmap.jpg" alt="Stefan Diez">
+                                 </div>
+                                 <div class="desiners-info__descr">
+                                    <div class="desiners-info__country">Germany</div>
+                                    <div class="desiners-info__by">photo BY <br> Kenta Hasegawa</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="slides-container__slide slides-container__slide">
+                           <div class="slides-container__text">
+                              <h2 class="slides-container__title">Teruhiro Yanagihara</h2>
+                              <div class="desiner-info">
+                                 <div class="desiners-info__image">
+                                    <img src="./img/Bitmap2.jpg" alt="Teruhiro Yanagihara">
+                                 </div>
+                                 <div class="desiners-info__descr">
+                                    <div class="desiners-info__country">Japan</div>
+                                    <div class="desiners-info__by">photo BY <br> Kenta Hasegawa</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="slides-container__slide slides-container__slide">
+                           <div class="slides-container__text">
+                              <h2 class="slides-container__title">Leon Ransmeier</h2>
+                              <div class="desiner-info">
+                                 <div class="desiners-info__image">
+                                    <img src="./img/Bitmap3.jpg" alt="Leon Ransmeier">
+                                 </div>
+                                 <div class="desiners-info__descr">
+                                    <div class="desiners-info__country">New York, USA</div>
+                                    <div class="desiners-info__by">photo BY <br> Kenta Hasegawa</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slides-container__bg slide-bg">
+                        <div class="slide-bg__inner slide-bg__inner--current">
+                           <a href="#" class="slide-bg__link" data-bg="./img/img1.jpg"></a>
+                        </div>
+                        <div class="slide-bg__inner index">
+                           <a href="#" class="slide-bg__link" data-bg="./img/img2.jpg"></a>
+                        </div>
+                        <div class="slide-bg__inner">
+                           <a href="#" class="slide-bg__link" data-bg="./img/img3.jpg"></a>
+                        </div>
+                        <div class="slide-bg__inner">
+                           <a href="#" class="slide-bg__link" data-bg="./img/img4.jpg"></a>
+                        </div>
+                        <div class="slide-bg__inner">
+                           <a href="#" class="slide-bg__link" data-bg="./img/img5.jpg"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="shapes" aria-hidden="true">
+               <div class="shapes__item shapes__item--current">
+                 <div class="shapes__content" data-bg="#C9B39B"></div>
+               </div>
+               <div class="shapes__item index">
+                 <div class="shapes__content" data-bg="#D6D8CF"></div>
+               </div>
+               <div class="shapes__item">
+                 <div class="shapes__content" data-bg="#D2E5DE"></div>
+               </div>
+               <div class="shapes__item">
+                 <div class="shapes__content" data-bg="#DFE5E7"></div>
+               </div>
+               <div class="shapes__item">
+                 <div class="shapes__content" data-bg="#D6D8CF"></div>
+               </div>
+             </div>
+         </section>
+      </main>
+   </div>
+
+
+
+   <script src="libers/bezier.js"></script>
+   <script src="libers/swiped-events.min.js"></script>
+   <script src="libers/gsap.min.js"></script>
+   <script src="./js/settings.js"></script>
+   <script src="./js/start-animation.js"></script>
+   <script src="./js/mouse.js"></script>
+   <script src="./js/bg-slad.js"></script>
+   <script src="./js/images-sladers.js"></script>
+   <script src="./js/text-slider.js"></script>
+   <script src="./js/shapes-slider.js"></script>
+   <script src="./js/script.js"></script>
+</body>
+</html>
